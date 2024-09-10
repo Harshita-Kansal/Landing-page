@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .navbar-text {
+            margin-left: 10%;
+
+
+        }
+
+        .my_img {
+            width: 20px;
+            height: 20px;
+            margin-right: 0%;
+        }
+
+        .my_img1 {
+
+            width: 20px;
+            height: 20px;
+        }
+
+        .main_container {
+            background-image: url(images/img4.png);
+        }
+
+        .my_img3 {
+            width: 100%;
+        }
+
+        .my_menu ul {
+            background-color: rgb(252, 252, 162);
+            height: 40px;
+            padding-top: 10px;
+            border-radius: 50rem;
+        }
+
+        .my_menu ul li {
+            display: inline;
+        }
+
+        .my_menu ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-left: 2%;
+        }
+
+        .my_img5 {
+            margin-top: 25%;
+            margin-left: 15%;
+        }
+
+        .text1 {
+            margin-top: 5%;
+            margin-left: 10%;
+            color: red;
+        }
+
+        .my_img6 {
+            margin-top: 15%;
+            margin-left: 1%;
+
+        }
+
+        .text2 {
+            margin-left: 10%;
+            margin-top: 5%;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+            color: #DF2432;
+        }
+
+        .text3 {
+            margin-left: 10%;
+            font-weight: 500;
+        }
+
+        .text4 {
+            margin-left: 10%;
+            margin-top: 2%;
+            text-align: justify;
+        }
+
+        .grey-container {
+            margin-top: 7%;
+            background-image: url(images/img8.png);
+            color: white;
+        }
+
+        .heading {
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 15%;
+            float: left;
+        }
+
+        .heading2 {
+            margin-top: 1%;
+            float: left;
+            text-align: justify;
+            margin-right: 20%;
+            font-size: 15px;
+        }
+
+        .heading3 {
+            color: #DF2432;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 5%;
+        }
+
+        .card-title {
+            color: #DF2432;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 18px;
+            margin-left: 3%;
+            margin-top: 4%;
+
+        }
+
+        .card-text {
+            margin-left: 3%;
+            font-weight: 500;
+            margin-top: 7%;
+        }
+
+        .card-link {
+            color: red;
+            margin-left: 3%;
+            margin-top: 7%;
+            text-decoration: none;
+        }
+
+        .card {
+            transition: 1s;
+            transform: scale(0.9);
+            box-shadow: -1px -1px -1px -1px;
+        }
+
+        .card:hover {
+            transform: scale(1);
+        }
+
+        .map-text1 {
+            font-size: 29px;
+            font-weight: bold;
+            color: #DF2432;
+            text-transform: uppercase;
+            float: right;
+        }
+        .about1
+        {
+            text-transform: uppercase;
+            text-align:left
+        }
+        .heading4
+        {
+            font-size: 25px;
+            font-weight: bolder;
+            color: #DF2432;
+            text-transform: uppercase;
+
+        }
+        .sub-heading4
+        {
+            text-transform: capitalize;
+            margin-top: 2%;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .text8
+        {
+            text-transform: uppercase;
+            color: rgb(248, 196, 132);
+            font-size: 30px;
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 5%;
+        }
+        .danger
+        {
+            background-color: red;
+        }
+        .star
+        {
+            margin-left: 7%;
+            margin-top: 10%;
+        }
+        .pics
+        {
+            margin-left: 3%;
+            margin-top: 3%;
+        }
+        .pic-title
+        {
+            margin-left: 4%;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: bold;
+            color: #DF2432;
+        }
+        .last-heading
+        {
+            font-size: 32px;
+            color: #DF2432;
+            font-weight: bolder;
+            text-transform: capitalize;
+            margin-right: 3%;
+            margin-left: 25%;
+            margin-top: 10%;
+        }
+        .last-sub-heading
+        {
+            margin-left: 25%;
+            margin-top: 3%;
+        }
+        .table1
+        {
+            height: 40px;
+            margin-left: 25%;
+            margin-top: 5%;
+            border-width: 2px;
+        }
+        .table-icon
+        {
+            height: 20px;
+            margin-left: 5%;
+        }
+        .footer
+        {
+            color: white;
+            margin-left: 15%;
+            margin-top: 0.5%;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-text">
+                <img src="images/phoneicon.png" alt="" class="my_img">
+                <span style="color: white;">Phone : 1800 2742 240</span>
+                <img src="images/emailicon.png" alt="" class="my_img">
+                <span style="color: white;">Email : admission@mmusolan.org</span>
+            </span>
+        </div>
+    </nav>
+    <div class="container-fluid main_container" style="position: relative; z-index: -1;">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/img3.png" alt="" class="my_img3">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="position: relative; margin-top: -1.5%;">
+        <div class="row" style="height: 60px;">
+            <div class="col-md-12">
+                <div class="my_menu">
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">admissions</a></li>
+                        <li><a href="">academics</a></li>
+                        <li><a href="">campus life</a></li>
+                        <li><a href="">placement</a></li>
+                        <li><a href="">research</a></li>
+                        <li><a href="">unique@mmu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/img5.png" alt="" class="my_img5">
+                <div class="text1">
+                    View All faculties &#8594;
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="images/img6.png" alt="" class="my_img6">
+            </div>
+            <div class="col-md-6">
+                <div class="text2">
+                    Maharishi
+                </div>
+                <div class="text2" style="margin-top: 0%;">
+                    Markandeshwar
+                </div>
+                <div class="text2" style="margin-top: 0%;">
+                    University
+                </div>
+                <div class="text3">
+                    Spearheading the Education Revolution
+                </div>
+
+                <p class="text4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur illo doloribus ad voluptates.
+                    Excepturi, ipsum vel. Eaque id exercitationem ipsum nemo placeat explicabo nam corporis cumque
+                    minus distinctio vel deleniti officiis maxime laudantium aliquam, libero consectetur architecto
+                    enim doloribus modi qui minima ad suscipit sunt. Consequuntur ut eligendi commodi provident,
+                    quidem totam facere quae at vitae, explicabo autem veniam? Dicta reiciendis quisquam aspernatur
+                    nemo!voluptatem dignissimos quibusdam sapiente, laboriosam vero vel debitis beatae eveniet quisquam
+                    neque!
+                </p>
+
+                <input type="Submit" value="Read More &#8594;" class="btn btn-danger" style="margin-left:10% ;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid grey-container">
+        <div class="row" style="height: 350px;">
+            <div class="col-md-6">
+                <img src="images/img7.png" alt="" style="float: right; height: 100%;">
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <div class="heading">chancellor's message</div>
+
+                    <p class="heading2">
+                        Academic excellence beyond boundaries, that's what makes MM(DU) the educational institution for
+                        the
+                        World. In fact, MM(DU) is more than just being a University, it's the engaging, intellectually
+                        vibrant place where growth-minded people share the platform...
+                    </p>
+                    <input type="submit" value="Read More &#8594;" class="btn btn-danger"
+                        style="float: left; width: 25%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading3">
+                    our latest news
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 1%;">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/card1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">wellbeing self-isolation daily drop in</h5>
+                        <p class="card-text"> Date: 11 September 2021 Location : Arizon Grand Hall Ticket : $10.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/card2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">the marine and aquatic civil servants</h5>
+                        <p class="card-text"> Date: 23 December 2021 Location : Arizon Grand Hall Ticket : $12.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/card3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">building a human rights bridge prover</h5>
+                        <p class="card-text"> Date: 23 December 2021 Location : Arizon Grand Hall Ticket : $12.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem; ">
+                    <img src="images/card4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">estimating mode effects from a sequential</h5>
+                        <p class="card-text"> Date: 23 December 2021 Location : Arizon Grand Hall Ticket : $12.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 6%;">
+            <div class="col-md-6">
+                <div style="float: right;">
+                    <div class="map-text1">preparing you for the real world</div>
+                    <p style="text-align: justify; margin-top: 10%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ea ullam eaque sapiente autem
+                        distinctio sit impedit delectus, veniam eius magnam enim beatae vel velit nobis asperiores fugit
+                        nisi! Expedita ullam, quas totam modi maiores corporis.
+                    </p>
+                    <input type="submit" value="Read More &#8594;" class="btn btn-danger"      style="margin-top: 5%;">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/map1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 5%;">
+            <div class="col-md-2">
+                <div class="about1">
+                    <span style="font-size: 20px; font-weight: 600; color:#DF2432; ">50+</span>hitech labs in different departments
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="about1">
+                    <span style="font-size: 20px; font-weight: 600; color:#DF2432; ">12</span>libraries including one central library
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="about1">
+                    smart classes fully<span style="font-size: 20px; font-weight: 600; color:#DF2432; "> WI-FI </span>campus
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about1">
+                   comfortable hostel accommodation for <span style="font-size: 20px; font-weight: 600; color:#DF2432; ">7000+</span>
+                   students
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about1">
+                    <span style="font-size: 20px; font-weight: 600; color:#DF2432; ">50,000+</span>success stories & dedicated placement cell
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 8%;">
+            <div class="col-md-6">
+                <div style="float:left">
+                    <div class="heading4">university events</div>
+                    <div class="sub-heading4">Bring the best speakers at every events</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="submit" value="all events" class="btn btn-danger" style="float: right; width: 30%;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 2%">
+            <div class="col-md-6">
+                <img src="images/img9.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-3">
+                <div class="card1" style="width: 16rem;">
+                    <img src="images/img10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">fintech & key Investment seminar</h5>
+                      <p class="card-text"> Date: 11 September 2021 Location : Arizon Grand Hall Ticket : $10.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card1" style="width: 16rem;">
+                    <img src="images/img11.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">sport management information webinar</h5>
+                      <p class="card-text"> Date: 23 December 2021 Location : Arizon Grand Hall Ticket : $12.00</p>
+                        <a href="#" class="card-link">Read More &#8594; </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid danger" style="position: relative; z-index: -1;">
+        <div class="row" style="margin-top: 5%; width: 100%; height: 250px;">
+            <div class="col-md-12">
+                <div class="text8">testimonials</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="position: relative; margin-top: -10%;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 24rem;">
+                   <div class="star"> &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+                        <div class="card-body">
+                            <div><img src="images/pic1.png" alt="" class="pics"><span class="pic-title">Fred Rodriquez</span>
+                        </div>
+                      <p class="card-text" style="margin-bottom: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse inventore mollitia vel libero eius obcaecati, magni porro suscipit!</p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 24rem;">
+                   <div class="star"> &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+                        <div class="card-body">
+                            <div><img src="images/pic2.png" alt="" class="pics"><span class="pic-title">Audrey stevenson</span>
+                        </div>
+                      <p class="card-text" style="margin-bottom: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse inventore mollitia vel libero eius obcaecati, magni porro suscipit!</p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 24rem;">
+                   <div class="star"> &#11088; &#11088; &#11088; &#11088; &#11088; </div>
+                        <div class="card-body">
+                            <div><img src="images/pic3.png" alt="" class="pics"><span class="pic-title">bennett miller</span>
+                        </div>
+                      <p class="card-text" style="margin-bottom: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus esse inventore mollitia vel libero eius obcaecati, magni porro suscipit!</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="last-heading">rolling admissions </div>
+                <div class="last-heading" style="margin-top: 0%;">now open</div>
+                <div class="last-sub-heading">Get in touch with us to discuss it:</div>
+                <table border="1" width="30%" class="table1">
+                    <tr>
+                        <td>
+                            <img src="images/phn.png" alt="" class="table-icon">
+                        </td>
+                        <td style="font-weight: 600;">
+                            1800 2742 240
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <img src="images/img14.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="background-color: #DF2432; height: 35px;">
+            <div class="col-md-12">
+                <div class="footer">Copyright &#169; 2021 MMU SOLAN. All rights reserved.</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
